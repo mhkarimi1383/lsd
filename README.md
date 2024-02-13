@@ -10,3 +10,11 @@ Run the command below and you are good to go
 ```bash
 git clone https://github.com/mhkarimi1383/lsd ~/.config/lsd
 ```
+
+**Recommended**: Add following aliases to your `bashrc` or `zshrc`
+
+```bash
+alias dir="ls"
+command -v lsd > /dev/null && alias ls='lsd -h --group-dirs first'
+command -v lsd > /dev/null && alias tree='lsd --tree'
+```
